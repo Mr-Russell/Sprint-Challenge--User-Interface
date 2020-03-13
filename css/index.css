@@ -84,6 +84,24 @@ p {
     text-decoration: none;
 }
 
+@keyframes navBar {
+	from {
+		color: gray;
+		text-decoration: none;
+	}
+	to {
+		color: deepskyblue;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+.navigation nav a:hover {
+	animation-name: navBar;
+	animation-duration: 1200ms;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
 
 .container {
     width: 800px;
@@ -104,6 +122,16 @@ p {
     padding-bottom: 20px;  
 }
 
+.about-page .top-content .text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding: 0 2% 20px;  
+}
+
+.about-page .top-content img {
+    margin: 2% 0;
+}
+
 .top-content img {
     margin-bottom: 2%;
 }
@@ -111,6 +139,13 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.about-page .middle-content {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .middle-content h2 {
@@ -133,6 +168,42 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .about-box {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    width: 45%;
+    align-content: space-around;
+    border-bottom: 1px dashed black;
+    padding: 2% 0;
+    margin-bottom: 5%;
+}
+
+.middle-content .about-box h2 {
+    margin: 5% 0;
+    padding: 0;
+}
+
+.middle-content .about-box p {
+    margin: 5% 0;
+}
+
+button {
+    font-size: 110%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 40%;
+    padding: 2%;
+}
+
+button:hover {
+	background: midnightblue;
+	color: white;
+	box-shadow: 0 13px 17px 0 darkgray;
+	transition: 500ms;
 }
 
 #Box1 {
@@ -189,6 +260,10 @@ p {
     padding-right: 0;
 }
 
+#about-bottom-content {
+    margin: 0 2% 40px;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -207,4 +282,11 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+	animation-name: navBar;
+	animation-duration: 1200ms;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
 }
