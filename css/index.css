@@ -66,6 +66,25 @@ p {
     line-height: 1.4;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.navigation nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.navigation nav a {
+    color: black;
+    text-decoration: none;
+}
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -83,6 +102,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content img {
+    margin-bottom: 2%;
 }
 
 .middle-content {
@@ -112,6 +135,46 @@ p {
     justify-content: center;
 }
 
+#Box1 {
+    background: teal;
+}
+
+#Box2 {
+    background: gold;
+}
+
+#Box3 {
+    background: cadetblue;
+}
+
+#Box4 {
+    background: coral;
+}
+
+#Box5 {
+    background: crimson;
+}
+
+#Box6 {
+    background: forestgreen;
+}
+
+#Box7 {
+    background: darkorchid;
+}
+
+#Box8 {
+    background: hotpink;
+}
+
+#Box9 {
+    background: indigo;
+}
+
+#Box10 {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -129,6 +192,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin-bottom: 0;
 }
 
 footer nav {
